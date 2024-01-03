@@ -14,7 +14,18 @@ public struct AppView: View {
     
     public var body: some View {
         TabView {
-            Text("Hello")
+            Text("Тести")
+                .tabItem {
+                    Label("Тести", systemImage: "list.bullet.clipboard")
+                }
+            Text("Теорія")
+                .tabItem {
+                    Label("Теорія", systemImage: "book")
+                }
+            Text("Профіль")
+                .tabItem {
+                    Label("Профіль", systemImage: "person")
+                }
         }
     }
 }

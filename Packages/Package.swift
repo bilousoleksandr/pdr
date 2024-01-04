@@ -20,7 +20,8 @@ let package = Package(
             name: "AppFeature",
             dependencies: [
                 "SharedViews",
-                "SharedModels"
+                "SharedModels",
+                "Signs"
             ]
         ),
         .testTarget(
@@ -47,6 +48,10 @@ let package = Package(
             dependencies: [
                 .product(name: "Difference", package: "Difference")
             ]
+        ),
+        .target(
+            name: "Signs",
+            resources: [.process("Resources")]
         ),
         .target(
             name: "SharedModels",

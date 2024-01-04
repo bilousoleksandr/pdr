@@ -1,0 +1,14 @@
+<svg width="200" height="201" viewBox="0 0 200 201" fill="none" xmlns="http://www.w3.org/2000/svg">
+<rect x="0.520833" y="-0.520833" width="126.042" height="176.042" rx="8.85416" transform="matrix(-1 0 0 1 163.542 12.832)" fill="white" stroke="#13141A" stroke-width="1.04167"/>
+<rect x="-1.04167" y="1.04167" width="114.583" height="164.583" rx="3.125" transform="matrix(-1 0 0 1 156.25 16.999)" fill="white" stroke="#13141A" stroke-width="2.08333"/>
+<rect x="77.1656" y="28.2812" width="45.6635" height="45.6635" fill="#FF7F0F" stroke="black" stroke-width="1.73234"/>
+<rect x="72.9167" y="78.1943" width="54.1667" height="3.38543" fill="black"/>
+<rect x="72.9167" y="84.9658" width="6.77063" height="20.3119" rx="1.73234" fill="black"/>
+<rect x="111.849" y="84.9658" width="6.77062" height="20.3119" rx="1.73234" fill="black"/>
+<rect x="84.7643" y="93.4307" width="30.4678" height="3.38532" fill="black"/>
+<rect x="81.3814" y="84.9658" width="6.77063" height="20.3119" rx="1.73234" fill="black"/>
+<rect x="120.314" y="84.9658" width="6.77062" height="20.3119" rx="1.73234" fill="black"/>
+<ellipse cx="100.001" cy="95.1209" rx="5.07797" ry="5.07797" fill="black"/>
+<circle cx="100" cy="144.081" r="29.1667" fill="#1071AF"/>
+<path fill-rule="evenodd" clip-rule="evenodd" d="M105.446 137.858V142.527L118.668 134.749L105.446 126.972V131.636H96.8894C91.3052 131.636 86.7783 136.163 86.7783 141.747V160.413H93.0005V141.747C93.0005 139.599 94.7417 137.858 96.8894 137.858L105.446 137.858Z" fill="white"/>
+</svg>

@@ -1,0 +1,15 @@
+<svg width="96" height="96" viewBox="0 0 96 96" fill="none" xmlns="http://www.w3.org/2000/svg">
+<rect x="0.25" y="0.25" width="66.5" height="66.5" rx="4.25" transform="matrix(4.37114e-08 -1 -1 -4.37114e-08 81.5 81.5)" fill="white" stroke="#1A1A2C" stroke-width="0.5"/>
+<rect width="62" height="62" rx="2" transform="matrix(4.37114e-08 -1 -1 -4.37114e-08 79 79)" fill="#1071AF"/>
+<rect width="2" height="62" transform="matrix(4.37114e-08 -1 -1 -4.37114e-08 79 49)" fill="white"/>
+<path d="M37 72V55L22 63.5L37 72Z" fill="white"/>
+<rect x="37" y="66" width="5" height="42" transform="rotate(-90 37 66)" fill="white"/>
+<path d="M33 39L33 26L22 32.5L33 39Z" fill="white"/>
+<rect width="5" height="8" transform="matrix(4.37114e-08 -1 -1 -4.37114e-08 41 35)" fill="white"/>
+<path d="M79 23H53.6766C52.7237 23 51.8275 23.4527 51.262 24.2196L47.5854 29.2061C47.2051 29.7218 47 30.3457 47 30.9864V39C47 40.1046 47.8954 41 49 41H79V23Z" fill="white"/>
+<circle r="5" transform="matrix(-1 0 0 1 56.5 40.5)" fill="white" stroke="#1071AF"/>
+<circle r="2.5" transform="matrix(-1 0 0 1 56.5 40.5)" fill="#1071AF"/>
+<path d="M53 25L49.279 30.2094C49.0426 30.5403 49.2792 31 49.6859 31L58 31L58 25L53 25Z" fill="#1071AF"/>
+<rect width="9" height="6" transform="matrix(-1 0 0 1 69 25)" fill="#1071AF"/>
+<rect width="7" height="6" transform="matrix(-1 0 0 1 78 25)" fill="#1071AF"/>
+</svg>

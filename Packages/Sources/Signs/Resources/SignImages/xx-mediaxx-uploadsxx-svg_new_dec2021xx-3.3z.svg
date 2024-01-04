@@ -1,0 +1,12 @@
+<svg width="200" height="201" viewBox="0 0 200 201" fill="none" xmlns="http://www.w3.org/2000/svg">
+<circle cx="100" cy="100.335" r="82.8125" fill="white" stroke="#05081B" stroke-width="1.04167"/>
+<circle cx="100" cy="100.336" r="71.875" stroke="#FF0E00" stroke-width="12.5"/>
+<path d="M84.167 77.0034H65.24C62.7729 77.0034 60.4949 78.3254 59.2709 80.4675L52.9895 91.4599C52.3959 92.4987 52.0837 93.6744 52.0837 94.8708V113.67C52.0837 116.201 54.1357 118.253 56.667 118.253H84.167V77.0034Z" fill="black"/>
+<circle r="11.4583" transform="matrix(-1 0 0 1 69.27 117.104)" fill="black" stroke="white" stroke-width="2.29167"/>
+<circle r="5.72917" transform="matrix(-1 0 0 1 69.2708 117.104)" fill="white"/>
+<path d="M56.6628 93.6211C56.2263 94.385 56.7779 95.3355 57.6577 95.3355H79.5819V81.5854H63.5404L56.6628 93.6211Z" fill="white"/>
+<path d="M84.167 109.085H147.917V118.252H84.167V109.085Z" fill="black"/>
+<path d="M89.5833 71.3766C89.5833 70.111 90.6094 69.085 91.875 69.085H145.625C146.891 69.085 147.917 70.111 147.917 71.3766V104.502H89.5833V71.3766Z" fill="black"/>
+<circle r="11.4583" transform="matrix(-1 0 0 1 126.146 117.104)" fill="black" stroke="white" stroke-width="2.29167"/>
+<circle r="5.72917" transform="matrix(-1 0 0 1 126.147 117.104)" fill="white"/>
+</svg>

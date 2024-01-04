@@ -1,0 +1,10 @@
+<svg width="200" height="201" viewBox="0 0 200 201" fill="none" xmlns="http://www.w3.org/2000/svg">
+<rect x="30.7287" y="31.363" width="138.54" height="138.54" rx="8.85404" fill="white" stroke="#13141A" stroke-width="1.04165"/>
+<rect x="35.4161" y="36.0498" width="129.165" height="129.165" rx="4.16661" fill="#1071AF"/>
+<path fill-rule="evenodd" clip-rule="evenodd" d="M102.082 36.0498H97.9152V53.0116H102.082V36.0498ZM102.082 58.6655H97.9152V75.6273H102.082V58.6655ZM97.9152 81.2789H102.082L102.082 98.2407H97.9152V81.2789ZM102.082 103.025H97.9152V119.987H102.082V103.025ZM102.082 125.641H97.9152V142.603H102.082V125.641ZM97.9152 148.254H102.082V165.216H97.9152V148.254Z" fill="white"/>
+<path d="M54.1658 73.5501L81.2488 73.5501L67.7073 50.6338L54.1658 73.5501Z" fill="white"/>
+<path d="M118.748 73.5501L145.831 73.5501L132.29 50.6338L118.748 73.5501Z" fill="white"/>
+<path d="M67.7073 67.2998V165.215" stroke="white" stroke-width="10.4165"/>
+<path d="M132.29 67.2998V165.215" stroke="white" stroke-width="10.4165"/>
+<path d="M132.29 104.799L151.039 135.007" stroke="white" stroke-width="10.4165"/>
+</svg>

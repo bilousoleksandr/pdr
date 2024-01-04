@@ -1,0 +1,11 @@
+<svg width="200" height="201" viewBox="0 0 200 201" fill="none" xmlns="http://www.w3.org/2000/svg">
+<circle cx="100" cy="100.667" r="82.8125" fill="white" stroke="#05081B" stroke-width="1.04167"/>
+<circle cx="100" cy="100.667" r="71.875" stroke="#FF0E00" stroke-width="12.5"/>
+<path d="M56.25 90.2497C56.25 87.9485 58.1155 86.083 60.4167 86.083H137.5C139.801 86.083 141.667 87.9485 141.667 90.2497V117.333H56.25V90.2497Z" fill="black"/>
+<circle cx="60.4166" cy="121.5" r="13.5417" fill="black" stroke="white" stroke-width="2.08333"/>
+<circle cx="60.4166" cy="121.5" r="6.25" fill="white"/>
+<path d="M77.0834 67.3324C77.0834 66.1818 78.0162 65.249 79.1668 65.249C80.3174 65.249 81.2501 66.1818 81.2501 67.3324V86.0824H77.0834V67.3324Z" fill="black"/>
+<path d="M134.629 63.1667C134.629 62.5914 134.163 62.125 133.588 62.125H112.046C110.587 62.125 109.261 62.9706 108.646 64.293L96.5676 90.25H134.629V63.1667Z" stroke="black" stroke-width="6.25"/>
+<circle cx="133.333" cy="117.333" r="19.7917" fill="black" stroke="white" stroke-width="2.08333"/>
+<circle cx="133.333" cy="117.334" r="10.4167" fill="white"/>
+</svg>

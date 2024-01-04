@@ -1,6 +1,7 @@
 import SharedModels
 import SharedViews
 import SwiftUI
+import Signs
 
 public struct Country: Identifiable {
     public let id: UUID = .init()
@@ -21,6 +22,10 @@ public struct AppView: View {
             Text("Теорія")
                 .tabItem {
                     Label("Теорія", systemImage: "book")
+                }
+            SignView()
+                .tabItem {
+                    Label("Знаки", systemImage: "book")
                 }
             Text("Профіль")
                 .tabItem {

@@ -7,7 +7,7 @@
 
 import Foundation
 
-struct Sign: Codable {
+struct Sign: Hashable {
     let number: String
     let name: String
     let description: String

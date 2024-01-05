@@ -30,11 +30,18 @@ public struct TheoryView: View {
                         title: "Розмітка"
                     )
                 }
-                TheoryItemView(
-                    destination: EmptyView(),
-                    image: "saved",
-                    title: "Збережені"
-                )
+                HStack(spacing: 16) {
+                    TheoryItemView(
+                        destination: FinesView(),
+                        image: "fines",
+                        title: "Штрафи"
+                    )
+                    TheoryItemView(
+                        destination: EmptyView(),
+                        image: "saved",
+                        title: "Збережені"
+                    )
+                }
                 Spacer()
             }.padding()
             .navigationTitle("Теорія")
@@ -65,7 +72,6 @@ struct TheoryItemView<Destination: View>: View {
                 Spacer()
                 Text(title)
                     .font(.title2)
-                    .fontWeight(.medium)
             }
             .foregroundColor(.primary)
             .frame(maxWidth: .infinity)
@@ -73,7 +79,7 @@ struct TheoryItemView<Destination: View>: View {
             .padding()
             .overlay(
                 RoundedRectangle(cornerRadius: 8)
-                    .stroke(.gray, lineWidth: 2)
+                    .stroke(.gray, lineWidth: 1)
             )
         }
 

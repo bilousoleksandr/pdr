@@ -7,7 +7,7 @@
 
 import Foundation
 
-struct SignCategory {
+struct SignCategory: Hashable {
     let id: Int
     let name: String
     let signs: [Sign]

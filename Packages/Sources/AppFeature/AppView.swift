@@ -15,13 +15,13 @@ public struct AppView: View {
     
     public var body: some View {
         TabView {
-            Text("Тести")
-                .tabItem {
-                    Label("Тести", systemImage: "list.bullet.clipboard")
-                }
             TheoryView()
                 .tabItem {
                     Label("Теорія", systemImage: "book")
+                }
+            Text("Тести")
+                .tabItem {
+                    Label("Тести", systemImage: "list.bullet.clipboard")
                 }
             Text("Профіль")
                 .tabItem {

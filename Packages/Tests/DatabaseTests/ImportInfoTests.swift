@@ -53,4 +53,22 @@ final class ImportInfoTests: XCTestCase {
             print(result)
         }
     }
+
+    func testFines() throws {
+        struct Sign: Codable {
+            let number: String
+            let name: String
+            let description: String
+        }
+
+        let url = Bundle.module.url(forResource: "default", withExtension: "realm")
+        let realm = try Realm(fileURL: try XCTUnwrap(url))
+        let result = realm.objects(PenaltyTheoryDB.self)
+        let ukrainian = result.filter { $0.primaryKey.contains("uk") }.sorted { $0.article < $1.article }
+        print("Foo")
+        for group in ukrainian {
+            print("Fine(amount: \"\(group.amount)\", article: \"\(group.article)\", description: \"\(group.textNoHtml)\"),")
+        }
+
+    }
 }

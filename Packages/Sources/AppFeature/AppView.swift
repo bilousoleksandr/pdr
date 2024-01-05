@@ -19,13 +19,9 @@ public struct AppView: View {
                 .tabItem {
                     Label("Тести", systemImage: "list.bullet.clipboard")
                 }
-            Text("Теорія")
+            TheoryView()
                 .tabItem {
                     Label("Теорія", systemImage: "book")
-                }
-            SignView()
-                .tabItem {
-                    Label("Знаки", systemImage: "book")
                 }
             Text("Профіль")
                 .tabItem {

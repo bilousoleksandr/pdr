@@ -71,4 +71,15 @@ final class ImportInfoTests: XCTestCase {
         }
 
     }
+
+    func testExamQuestions() throws {
+        let url = Bundle.module.url(forResource: "sections_ua", withExtension: "json")
+        let decoder = JSONDecoder()
+        decoder.keyDecodingStrategy = .convertFromSnakeCase
+        let data = try Data(contentsOf: try XCTUnwrap(url))
+        let result = try decoder.decode([QuestionSection].self, from: data)
+        result.forEach {
+            print("QuestionSection(id: \($0.id), order: \($0.sorting), text: \"\($0.text)\"),")
+        }
+    }
 }

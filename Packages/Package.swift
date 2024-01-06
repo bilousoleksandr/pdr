@@ -22,7 +22,8 @@ let package = Package(
             dependencies: [
                 "SharedViews",
                 "SharedModels",
-                "Signs"
+                "Signs",
+                "TestsFeature"
             ]
         ),
         .testTarget(
@@ -66,6 +67,10 @@ let package = Package(
             dependencies: [
                 "Database"
             ],
+            resources: [.process("Resources")]
+        ),
+        .target(
+            name: "TestsFeature",
             resources: [.process("Resources")]
         ),
         .target(

@@ -2,6 +2,7 @@ import SharedModels
 import SharedViews
 import SwiftUI
 import Signs
+import TestsFeature
 
 public struct Country: Identifiable {
     public let id: UUID = .init()
@@ -19,7 +20,7 @@ public struct AppView: View {
                 .tabItem {
                     Label("Теорія", systemImage: "book")
                 }
-            Text("Тести")
+            TestView()
                 .tabItem {
                     Label("Тести", systemImage: "list.bullet.clipboard")
                 }

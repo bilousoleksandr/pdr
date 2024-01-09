@@ -1,4 +1,4 @@
-import Difference
+@_exported import Difference
 import XCTest
 
 public func XCTAssertNoDifference<T: Equatable>(

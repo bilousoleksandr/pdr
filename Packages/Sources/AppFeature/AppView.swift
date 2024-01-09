@@ -1,7 +1,6 @@
 import SharedModels
-import SharedViews
 import SwiftUI
-import Signs
+import TheoryFeature
 import TestsFeature
 
 public struct Country: Identifiable {

@@ -72,14 +72,77 @@ final class ImportInfoTests: XCTestCase {
 
     }
 
-    func testExamQuestions() throws {
-        let url = Bundle.module.url(forResource: "sections_ua", withExtension: "json")
-        let decoder = JSONDecoder()
-        decoder.keyDecodingStrategy = .convertFromSnakeCase
+    func testQuestions() throws {
+        struct Sign: Codable {
+            let number: String
+            let name: String
+            let description: String
+        }
+
+        let url = Bundle.module.url(forResource: "questions_ua", withExtension: "json")
         let data = try Data(contentsOf: try XCTUnwrap(url))
-        let result = try decoder.decode([QuestionSection].self, from: data)
-        result.forEach {
-            print("QuestionSection(id: \($0.id), order: \($0.sorting), text: \"\($0.text)\"),")
+        let result = try JSONDecoder().decode([ExamQuestion].self, from: data)
+        let questions = result.map {
+            let section = $0.stTe.flatMap { " \($0)" } ?? ""
+            let tip = $0.pst.flatMap { value in value + section }
+            return Question(id: $0.i, question: $0.q, answers: $0.a, rightAnswerIndex: $0.rai, image: nil, sectionIndex: $0.si, tip: tip, comment: nil)
+        }
+        let eData = try JSONEncoder().encode(questions)
+        try eData.write(to: URL(fileURLWithPath: FileManager.default.currentDirectoryPath.appending("value.json")))
+        print(URL(fileURLWithPath: FileManager.default.currentDirectoryPath.appending("value.json")))
+    }
+}
+
+struct ExamQuestion: Decodable {
+    let i: Int
+    let q: String
+    let a: [String]
+    let rai: Int
+    let si: Int
+    let pst: String?
+    let stTe: String?
+}
+
+struct Question: Codable {
+    let id: Int
+    let question: String
+    let answers: [String]
+    let rightAnswerIndex: Int
+    let image: String?
+    let sectionIndex: Int
+    let tip: String?
+    let comment: String?
+}
+
+
+extension FileManager {
+    func writeToLogFile(_ information: String, filePath: String) {
+        // Convert the information string to Data
+        if let dataToWrite = information.data(using: .utf8) {
+            // Use FileManager to append the data to the file
+            if let fileHandle = FileHandle(forWritingAtPath: filePath) {
+                // Seek to the end of the file
+                fileHandle.seekToEndOfFile()
+
+                // Write the data to the end of the file
+                fileHandle.write(dataToWrite)
+
+                // Close the file handle
+                fileHandle.closeFile()
+
+                print("Information written to file: \(filePath)")
+            } else {
+                // If the file doesn't exist, create it and write the data
+                do {
+                    try dataToWrite.write(to: URL(fileURLWithPath: filePath), options: .atomic)
+                    print("File created and information written: \(filePath)")
+                } catch {
+                    print("Error creating or writing to file: \(error.localizedDescription)")
+                }
+            }
+        } else {
+            print("Error converting information to data.")
         }
     }
+
 }

@@ -22,7 +22,7 @@ let package = Package(
             dependencies: [
                 "SharedViews",
                 "SharedModels",
-                "Signs",
+                "TheoryFeature",
                 "TestsFeature"
             ]
         ),
@@ -52,7 +52,8 @@ let package = Package(
             ]
         ),
         .target(
-            name: "Signs",
+            name: "TheoryFeature",
+            dependencies: ["SharedViews"],
             resources: [.process("Resources")]
         ),
         .target(
@@ -71,6 +72,7 @@ let package = Package(
         ),
         .target(
             name: "TestsFeature",
+            dependencies: ["SharedViews"],
             resources: [.process("Resources")]
         ),
         .target(

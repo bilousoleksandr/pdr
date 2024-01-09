@@ -6,6 +6,7 @@
 //
 
 import SwiftUI
+import SharedViews
 
 struct StartExamView: View {
     var body: some View {
